@@ -371,3 +371,5 @@ function imcPessoa (peso, altura) {
   imc = imc.toFixed(2);
   return imc;
 }
+
+//parei às 17:48 do dia 01/05/2024 - exercicio dois. 
