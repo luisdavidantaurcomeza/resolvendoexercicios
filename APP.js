@@ -347,12 +347,12 @@ function verificarAprovacao(media) {
   
 }
 
- */
+/* /*  */
 
 //Crie uma função que calcule o índice de massa corporal (IMC) de uma pessoa, a partir de sua altura, em metros, e peso, 
 //em quilogramas, que serão recebidos como parâmetro:
 
-peso = prompt('informe é peso em kg da pessoa! ');
+/* peso = prompt('informe é peso em kg da pessoa! ');
 altura = prompt('informe a altura em metros da pessoa!');
 
 if (isNaN(peso)||isNaN(altura)){
@@ -369,7 +369,7 @@ function imcPessoa (peso, altura) {
   imc = peso / (altura*altura);
   imc = parseFloat(imc);
   imc = imc.toFixed(2);
-  return imc;
+  return imc; 
 }
-
+*/
 //parei às 17:48 do dia 01/05/2024 - exercicio dois. 
