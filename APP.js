@@ -373,3 +373,163 @@ function imcPessoa (peso, altura) {
 }
 */
 //parei às 17:48 do dia 01/05/2024 - exercicio dois. 
+
+//recomecei às 15:30 do dia 04/05
+
+//Crie uma função que calcule o valor do fatorial de um número passado como parâmetro.
+
+/* let numero = prompt ('informe um número para calcular o fatorial!! ');
+
+if (isNaN(numero)){
+  alert('digite um numero válido!! ');
+}else {
+  numero=parseFloat(numero);
+  mostrarFatorial = calculaFatorial(numero);
+  alert(mostrarFatorial);
+}
+
+function calculaFatorial (numero){
+  if (numero == 0 || numero == 1) {
+    return 1;
+  }
+
+  let fatorial = 1;
+  for (let i = 2; i <= numero; i++) {
+    fatorial *= i;
+  }
+
+  return fatorial;
+} */
+
+//Crie uma função que converte um valor em dólar, passado como parâmetro, e retorna o valor equivalente em reais. 
+//Para isso, considere a cotação do dólar igual a R$ 4,80.
+
+/* let conversao= prompt ('informe o valor em dólares que deseja converter: '); 
+
+if (isNaN(conversao)){
+  alert ('digite um valor válido!!!');
+
+} else{
+  conversao = parseFloat(conversao);
+  mostrandoValor = converterreal(conversao);
+  alert ('o valor em reais é: '+mostrandoValor);
+
+}
+
+function converterreal (conversao){
+  let valorReal = conversao*4.80;
+  return valorReal;
+} */
+//Crie uma função que mostre na tela a área e o perímetro de uma sala retangular, 
+//utilizando altura e largura que serão dadas como parâmetro.
+/* 
+let lado1 = prompt ('informe o valor do lado 1 ou altura do retângulo!');
+let lado2 = prompt ('informe o valor do lado 2 ou a base do retângulo!');
+
+if (isNaN(lado1)||isNaN(lado2)){
+  alert('informe um valor válido!!!');
+} else {
+  lado1 = parseFloat(lado1);
+  lado2 = parseFloat(lado2);
+  area1 = calcularArea(lado1,lado2); 
+  area2 = calcularPerimetro(lado1, lado2);
+  alert('o valor da área: '+area1); 
+  alert('o valor do perímetro é: '+area2);
+
+}
+
+function calcularArea (lado1, lado2){
+  let area = lado1*lado2;
+   return area;
+}
+function calcularPerimetro(lado1, lado2){
+  let perimetro = lado1+lado2+lado1+lado2;
+  return perimetro;
+} */
+
+/* let altura = 3; // em metros
+let largura = 5; // em metros
+calcularAreaPerimetroSalaRetangular(altura, largura);
+
+function calcularAreaPerimetroSalaRetangular(altura, largura) {
+  let area = altura * largura;
+  let perimetro = 2 * (altura + largura);
+  
+  alert(`Área da sala: ${area} metros quadrados`);
+  alert(`Perímetro da sala: ${perimetro} metros`);
+} */
+
+//Crie uma função que mostre na tela a área e o perímetro de uma sala circular, 
+//utilizando seu raio que será fornecido como parâmetro. Considere Pi = 3,14.
+
+/* let raio = prompt('informe o valor do raio do circulo! ');
+let pi = 3.14;
+
+if (isNaN(raio)){
+  alert ('informe um valor válido! ');
+
+}else {
+  mostrarValor(raio,pi);
+}
+
+function mostrarValor (raio, pi){
+    let area = pi*raio*raio;
+    let perimetro = raio*raio;
+    alert (`o valor da área é ${area}`);
+    alert (`o valor do perimetro é: ${perimetro}`);
+} */
+
+//Crie uma função que mostre na tela a tabuada de um número dado como parâmetro.
+/* 
+let numero = prompt ('informe o número para calcular a tabuada! ');
+
+if (isNaN(numero)){
+  alert ('Informe um valor válido!!!');
+ } else{
+  tabuada (numero);
+
+ }
+ function tabuada(numero){
+    for (let i = 0; i<=10; i++){
+      let resultado = i*numero;
+      alert (`${numero} vezes ${i} é ${resultado}`);
+      
+
+    } 
+      
+ }*/
+
+ //Crie uma lista vazia, com o nome listaGenerica.
+/*  let listaGenerica = []; 
+  */
+
+//Crie uma lista de linguagens de programação chamada linguagensDeProgramacao.
+
+/* let linguagensDeProgramacao = ['java', 'python', 'C++', 'C#', 'javascript' ]; */
+
+//Adicione à lista linguagensDeProgramacao os seguintes elementos: Java, Ruby e GoLang. Mostre como um alerta na tela;
+
+/* let linguagensDeProgramacao = ['java', 'python', 'C++', 'C#', 'javascript' ];
+linguagensDeProgramacao.push = ['Ruby', 'Golang'];
+
+alert (linguagensDeProgramacao);
+ */
+
+//Crie uma lista com 3 nomes e exiba no console apenas o primeiro elemento.
+
+/* let lista = ['curso1', 'curso2', 'curso3']; 
+console.log ('mostrando a lista: '+lista);
+console.log ('mostrando o primeiro valor da lista: '+lista[0]); */
+
+//Crie uma lista com 3 nomes e exiba no console apenas o segundo elemento.
+
+/* let lista = ['nome1','nome2','nome3'];
+
+console.log ('mostrando o segundo nome da lista: '+lista[1]); */
+
+//Crie uma lista com 3 nomes e exiba no console apenas o último elemento.
+/* let lista = ['nome1', 'nome2', 'nome3'];
+console.log('o último nome é: '+lista.length);
+ */
+
+//terminei às 17:26 - 04/05
