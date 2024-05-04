@@ -375,4 +375,4 @@ function imcPessoa (peso, altura) {
 //parei às 17:48 do dia 01/05/2024 - exercicio dois. 
 
 
-adfadfsa
+
