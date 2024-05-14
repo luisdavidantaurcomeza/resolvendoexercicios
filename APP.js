@@ -533,3 +533,157 @@ console.log('o último nome é: '+lista.length);
  */
 
 //terminei às 17:26 - 04/05
+
+/* • Abra o DevTools no seu navegador;
+
+• Use a aba "Console" para testar a seleção de um botão específico, utilizando a função querySelector;
+
+• Tente selecionar o botão usando diferentes seletores: nome da tag, classe, e ID;
+
+• Verifique se a seleção está correta observando o retorno no console do DevTools;
+
+• Salve as alterações no arquivo main.js.
+
+Código utilizado aplicado no console do navegador:
+
+document.querySelector('.tecla_pom'); */
+
+/* 2) Emitindo um alerta na tela
+
+Imagine que você está trabalhando em um projeto de site que inclui elementos interativos como botões que emitem sons, semelhante a um piano. 
+Até o momento, você já aprendeu como emitir o som utilizando JavaScript, agora, a sua missão é emitir um alerta escrito “Fui clicado”, em um
+botão assim que ele receber um clique.
+
+• No seu arquivo HTML, adicione a tag <script> dentro da tag <head> ou antes do fechamento da tag <body>. Use o atributo src para vincular ao
+arquivo main.js;
+
+• No arquivo main.js, adicione um alert para testar se está tudo funcionando.
+
+• Use um método como document.getElementById ou document.querySelector para selecionar um botão do seu HTML;
+
+• Adicione um eventListener ao botão para que, quando clicado, execute uma função;
+
+• Teste a interação no navegador para garantir que o código JavaScript está manipulando corretamente o elemento HTML.
+
+Código HTML:
+
+<button>Clique aqui</button>
+
+<script src="main.js"></script>
+
+Código JavaScript:*/
+/* 
+**********************************************************************************************************
+let botao = document.querySelector('button');*
+                                             *
+botao.addEventListener('click', function() { *
+                                             *
+alert('Fui clicado!');                       * 
+                                             *
+});                                          *
+********************************************************************************************************** */
+
+
+
+/* 3) Integrando estilo e funcionalidade em um projeto Web
+
+Neste exercício, você enfrentará um desafio comum no desenvolvimento web: garantir consistência de design entre diferentes navegadores. 
+Trabalhando com o mesmo projeto do instrumento musical digital, você percebeu que o mini player de áudio tem aparências diferentes no Firefox
+e no Chrome. Seu objetivo é personalizar o estilo desse player de áudio usando CSS para que ele tenha uma aparência consistente em ambos os
+navegadores. Como a tag audio é difícil de estilizar diretamente, você precisará encontrar uma maneira criativa de contornar essa limitação,
+talvez usando elementos HTML adicionais e CSS para alcançar o design desejado. */
+
+/* • Como não é possível estilizar diretamente a tag audio, crie um novo elemento HTML que servirá como seu player personalizado. Por exemplo, um div com botões para play e pause;
+
+• Utilize CSS para estilizar esse novo elemento de forma que tenha uma aparência consistente em diferentes navegadores;
+
+• Teste a aparência e a funcionalidade do seu player personalizado nos navegadores Firefox e Chrome para garantir consistência.
+
+Código CSS:
+
+.meuPlayer {
+
+background-color: #fff;
+
+border-radius: 5px;
+
+color: #000;
+
+}*/
+
+/* Adicione mais estilos conforme necessário */
+/* Desenvolvendo interatividade com JavaScript e HTML
+
+Imagine que você está trabalhando no projeto de um instrumento musical digital, similar ao Alura Midi, onde ao clicar nos botões, 
+sons diferentes são reproduzidos. Sua tarefa é utilizar HTML e JavaScript para criar a interatividade desses botões:
+
+• Inicie com o botão que representa o som "Pom";
+
+• Utilize a tag button no HTML e adicione a funcionalidade de reprodução de som usando JavaScript.
+
+Para fazer essas ações, você precisa vincular o som específico (que já está disponível em um arquivo de áudio) ao clique deste botão.
+
+• Adicione um botão em seu arquivo HTML com a tag button;
+
+• Vincule o arquivo de áudio do som "Pom" ao seu projeto HTML. Inclua a tag audio sem o atributo controls e com o ID correspondente;
+
+• No seu arquivo JavaScript, crie uma função para reproduzir o som quando o botão for clicado;
+
+• Teste o botão no seu navegador para garantir que o som seja reproduzido corretamente ao clicar.
+ */
+//Código HTML:
+
+/* 
+<button id="tecla_pom" class="tecla_pom">Pom</button>
+
+<audio src="caminho_para_seu_arquivo_de_som_pom.mp3" id="som_tecla_pom"></audio> }*/
+
+//Código JavaScript:
+/* 
+document.querySelector("#tecla_pom").onclick = function() {
+
+document.querySelector("#som_tecla_pom").play();
+
+} */
+
+/* Resolvendo erros de nulo no JavaScript
+
+Você está desenvolvendo um site que inclui a reprodução de sons ao clicar em botões. Ao testar o site, você se depara com um erro no console do navegador: o JavaScript está tentando acessar uma propriedade de um elemento que ainda não foi carregado, resultando em um erro de "nulo". Sua tarefa é corrigir esse erro, garantindo que o script só execute depois que todos os elementos
+
+necessários da página tenham sido carregados. Para fazer a correção, você precisa mover a tag <script> para o local apropriado no arquivo HTML.
+
+• Verifique a localização da tag <script> no seu arquivo HTML. Ela deve estar colocada ao final do corpo do documento, logo antes do fechamento da tag </body>;
+
+• Mova a tag <script> para essa nova localização. Isso garantirá que o JavaScript só será executado após todos os elementos da página terem sido carregados;
+
+• Salve as alterações e recarregue a página no navegador. Verifique se o erro de nulo foi resolvido.
+
+Código HTML:
+
+<body>
+
+<!-- Conteúdo do body -->
+
+<!-- ... -->
+
+<script src="main.js"></script>
+
+</body> */
+
+/* Adicionando funcionalidade de áudio ao botão
+
+Você está desenvolvendo um aplicativo web de instrumentos musicais e precisa criar uma interface que permita aos usuários tocar sons diferentes ao clicar em botões específicos. Já existe um botão com a classe tecla_pom e uma função tocaSomPom() que reproduz o som. Seu desafio é vincular a função tocaSomPom() ao evento de clique do botão tecla_pom sem usar o atributo onclick no HTML, mantendo as boas práticas de JavaScript.
+
+• Primeiro, selecione o botão com a classe tecla_pom (como no código Javascript abaixo):
+
+const botaoPom = document.querySelector('.tecla_pom')
+
+• Em seguida, adicione um event listener de clique a este botão:
+
+javascript
+
+Copy code
+
+botaoPom.addEventListener('click', tocaSomPom);
+ */
+
